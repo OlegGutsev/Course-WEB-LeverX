@@ -1,0 +1,73 @@
+html,
+body {
+    margin: 0;
+    height: 99.8%;
+}
+
+div {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#firstCon {
+    height: 18%;
+}
+
+#secondCon {
+    height: 35%;
+}
+
+#thirdCon {
+    height: 30%;
+}
+
+#forthCon {
+    height: 22%;
+}
+
+#firstCon,
+#secondCon,
+#thirdCon,
+#forthCon {
+    width: 100%;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+.item_one,
+.item_two,
+.item_three,
+.item_four {
+    height: 100%;
+    margin: 5px;
+}
+
+.item_one {
+    background-color: orange;
+    width: 49.2%;
+}
+
+.item_two {
+    width: 99%;
+    background-color: rgb(197, 238, 16);
+}
+
+.item_three {
+    width: 32.65%;   
+    background-color: blue;
+}
+
+.item_four {
+    width: 24.35%;
+    background-color: grey;
+}

@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+}
+table{
+    position:fixed;
+    width: 99%;
+    height: 99%;
+    border-collapse: separate;
+
+}
+td, th {
+    border: solid 3px white;
+    } 
+
+.first{
+    background-color: orange;
+}
+.second{
+     background-color: rgb(197, 238, 16);
+}
+.third{
+    background-color: blue;
+}
+.forth{
+    background-color: grey;
+}
