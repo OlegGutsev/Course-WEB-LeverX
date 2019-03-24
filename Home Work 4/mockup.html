@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="plant.js"></script>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form id="mainForm" action="#" method="post">
+            <div class="form-group">
+                <label for="typeClass">Class</label>
+                <select class="form-control" id="typeClass" name="typeClass">
+                  <option>fern</option>
+                  <option>spruce</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="name">Name of Plant</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter Name" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input class="form-control" type="number" id="age" placeholder="Enter Age" name="age" >
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input class="form-control" type="text" id="description" placeholder="Enter Description" name="description" >
+            </div>
+            <div class="form-group">
+                <label for="species">Species</label>
+                <input class="form-control" type="text" id="species" placeholder="Enter Species" name="species" >
+            </div>
+            <div class="form-group">
+                <label for="inflorescenceSize">Inflorescence Size</label>
+                <input class="form-control" type="number" id="inflorescenceSize" placeholder="Enter inflorescenceSize" name="inflorescenceSize" >
+            </div>
+            <div class="form-group">
+                <label for="habitat">habitat</label>
+                <input class="form-control" type="text" id="habitat" placeholder="Enter habitat" name="habitat" >
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" id="add" name="add" class="btn btn-primary">Add</button>
+                <button type="submit" id="upd" name="upd" class="btn btn-primary">Update</button>
+                <button type="submit" id="del" name="del" class="btn btn-primary">Delete</button>
+            </div>
+        </form>
+        <pre id="output"></pre>
+        </br>
+        </br>
+        </br>
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Species</th>
+                    <th scope="col">Inflorescence Size</th>
+                    <th scope="col">Habitat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Fern1</td>
+                    <td>Fern</td>
+                    <td>2</td>
+                    <td>Top fern</td>
+                    <td>onion, garlic</td>
+                    <td>25</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Spruce1</td>
+                    <td>Spruce</td>
+                    <td>25</td>
+                    <td>Middle Spruce</td>
+                    <td>log,billet,seedling</td>
+                    <td>-</td>
+                    <td>Forest</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
