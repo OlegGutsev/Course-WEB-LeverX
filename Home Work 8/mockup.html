@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="plant.js"></script>
+    <script src="CRUD.js"></script>
+
+<body>
+    <div class="container">
+        <form id="mainForm" action="#" method="post">
+
+            <div class="form-group">
+                <label for="typeClass">Class</label>
+                <select class="form-control" id="typeClass" name="typeClass" onchange="myFunction()">
+                    <option>fern</option>
+                    <option>spruce</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name of Plant</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter Name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input class="form-control" type="number" id="age" placeholder="Enter Age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input class="form-control" type="text" id="description" placeholder="Enter Description"
+                    name="description">
+            </div>
+            <div class="form-group">
+                <label for="species">Species</label>
+                <input class="form-control" type="text" id="species" placeholder="Enter Species" name="species">
+            </div>
+            <div class="form-group">
+                <label for="inflorescenceSize" id="labInf">Inflorescence Size</label>
+                <input class="form-control" type="number" id="inflorescenceSize" placeholder="Enter inflorescenceSize"
+                    name="inflorescenceSize">
+            </div>
+            <div class="form-group">
+                <label for="habitat" id="labHab">habitat</label>
+                <input class="form-control" type="text" id="habitat" placeholder="Enter habitat" name="habitat">
+            </div>
+            <br/><br/>
+            <div class="form-group">
+                    <label for="id">Id</label>
+                    <input class="form-control" type="text" id="id" placeholder="Id(Only for Update and Delete)"  name="id">
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" id="add" name="add" class="btn btn-primary">Add</button>
+                <button type="submit" id="upd" name="upd" class="btn btn-primary">Update</button>
+                <button type="submit" id="del" name="del" class="btn btn-primary">Delete</button>
+            </div>
+        </form>
+        <pre id="output"></pre>
+        </br>
+        </br>
+        </br>
+        <table class="table table-sm" id="plant">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Species</th>
+                    <th scope="col">Inflorescence Size</th>
+                    <th scope="col">Habitat</th>
+                </tr>
+            </thead>
+            <tbody id="rTBody">
+                <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Fern1</td>
+                    <td>Fern</td>
+                    <td>2</td>
+                    <td>Top fern</td>
+                    <td>onion, garlic</td>
+                    <td>25</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Spruce1</td>
+                    <td>Spruce</td>
+                    <td>25</td>
+                    <td>Middle Spruce</td>
+                    <td>log,billet,seedling</td>
+                    <td>-</td>
+                    <td>Forest</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
